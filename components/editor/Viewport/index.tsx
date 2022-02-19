@@ -62,9 +62,7 @@ export const Viewport: React.FC = ({ children }) => {
                 'flex items-center justify-center w-full pt-6 text-xs text-light-gray-2'
               }
             >
-              <a href="https://www.netlify.com">
-                This site is powered by Netlify
-              </a>
+              Check this out Eloy
             </div>
           </div>
         </div>

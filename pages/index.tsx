@@ -29,7 +29,7 @@ function App() {
         <ThemeProvider theme={theme}>
             <div className="h-full h-screen">
                 <NextSeo
-                    title="reportery"
+                    title="RS testground"
                     description="A React framework for building drag-n-drop page editors."
                     canonical="https://craft.js.org/"
                     twitter={{
