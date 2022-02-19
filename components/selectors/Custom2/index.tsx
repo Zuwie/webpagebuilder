@@ -27,13 +27,6 @@ Custom2VideoDrop.craft = {
 export const Custom2 = (props: any) => {
   return (
     <Container {...props} className="overflow-hidden">
-      <div className="w-24">
-        <h2 className="text-xs text-white">
-          You can only drop
-          <br />
-          one video here.
-        </h2>
-      </div>
       <Element canvas is={Custom2VideoDrop} id="wow">
         <Video />
       </Element>

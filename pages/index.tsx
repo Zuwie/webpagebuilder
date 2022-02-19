@@ -11,6 +11,7 @@ import {Custom1, OnlyButtons} from '../components/selectors/Custom1';
 import {Custom2, Custom2VideoDrop} from '../components/selectors/Custom2';
 import {Custom3, Custom3BtnDrop} from '../components/selectors/Custom3';
 import {Video} from '../components/selectors/Video';
+import Image from 'next/image';
 
 const theme = createTheme({
     typography: {
@@ -49,6 +50,7 @@ function App() {
                         OnlyButtons,
                         Button,
                         Video,
+                        Image
                     }}
                     enabled={false}
                     onRender={RenderNode}
@@ -86,7 +88,7 @@ function App() {
                                             fontSize="23"
                                             fontWeight="400"
                                             text="Craft.js is a React framework for building powerful &amp; feature-rich drag-n-drop page editors."
-                                        ></Text>
+                                        />
                                     </Element>
                                     <Element
                                         canvas
@@ -100,7 +102,7 @@ function App() {
                                             fontSize="14"
                                             fontWeight="400"
                                             text="Everything you see here, including the editor, itself is made of React components. Craft.js comes only with the building blocks for a page editor; it provides a drag-n-drop system and handles the way user components should be rendered, updated and moved, among other things. <br /> <br /> You control the way your editor looks and behave."
-                                        ></Text>
+                                        />
                                     </Element>
                                 </Element>
 
@@ -113,7 +115,7 @@ function App() {
                                     height="auto"
                                     padding={['40', '40', '40', '40']}
                                     margin={['0', '0', '40', '0']}
-                                    custom={{displayName: 'ComplexSection'}}
+                                    custom={{displayName: 'Ceo Letter'}}
                                 >
                                     <Element
                                         canvas
@@ -145,61 +147,9 @@ function App() {
                                             flexDirection="row"
                                             width="350px"
                                             height="250px"
-                                            custom={{displayName: 'Square'}}
+                                            custom={{displayName: 'Image'}}
                                         >
-                                            <Element
-                                                canvas
-                                                is={Container}
-                                                justifyContent="center"
-                                                alignItems="center"
-                                                background={{
-                                                    r: 76,
-                                                    g: 78,
-                                                    b: 78,
-                                                    a: 1,
-                                                }}
-                                                shadow={25}
-                                                width="90%"
-                                                height="90%"
-                                                padding={['10', '20', '10', '20']}
-                                                custom={{displayName: 'Outer'}}
-                                            >
-                                                <Element
-                                                    canvas
-                                                    is={Container}
-                                                    justifyContent="center"
-                                                    alignItems="center"
-                                                    background={{
-                                                        r: 76,
-                                                        g: 78,
-                                                        b: 78,
-                                                        a: 1,
-                                                    }}
-                                                    shadow={50}
-                                                    width="80%"
-                                                    height="80%"
-                                                    padding={['10', '20', '10', '20']}
-                                                    custom={{displayName: 'Middle'}}
-                                                >
-                                                    <Element
-                                                        canvas
-                                                        is={Container}
-                                                        justifyContent="center"
-                                                        alignItems="center"
-                                                        background={{
-                                                            r: 76,
-                                                            g: 78,
-                                                            b: 78,
-                                                            a: 1,
-                                                        }}
-                                                        shadow={50}
-                                                        width="60%"
-                                                        height="60%"
-                                                        padding={['10', '20', '10', '20']}
-                                                        custom={{displayName: 'Inner'}}
-                                                    />
-                                                </Element>
-                                            </Element>
+                                            <Image src="/eb.jpeg" alt="image of ceo" width="200" height="252" />
                                         </Element>
                                         <Element
                                             canvas
@@ -224,10 +174,20 @@ function App() {
                                                     b: '255',
                                                     a: '1',
                                                 }}
-                                                margin={['0', '0', '18', '0']}
                                                 fontSize="20"
-                                                text="Design complex components"
-                                            ></Text>
+                                                text="Dr. Eloy Barrantes"
+                                            />
+                                            <Text
+                                                color={{
+                                                    r: '255',
+                                                    g: '255',
+                                                    b: '255',
+                                                    a: '1',
+                                                }}
+                                                margin={['0', '0', '18', '0']}
+                                                fontSize="14"
+                                                text="CEO at nexxar / Paradots"
+                                            />
                                             <Text
                                                 color={{
                                                     r: '255',
@@ -237,8 +197,8 @@ function App() {
                                                 }}
                                                 fontSize="14"
                                                 fontWeight="400"
-                                                text="You can define areas within your React component which users can drop other components into. <br/><br />You can even design how the component should be edited — content editable, drag to resize, have inputs on toolbars — anything really."
-                                            ></Text>
+                                                text="Aliquam convallis vehicula dui vitae suscipit. Nam eget massa lacinia, maximus sem at, semper lectus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc nec turpis at metus faucibus euismod accumsan vel justo."
+                                            />
                                         </Element>
                                     </Element>
                                 </Element>
@@ -281,14 +241,24 @@ function App() {
                                                 a: '1',
                                             }}
                                             fontSize="23"
-                                            text="Programmatic drag &amp; drop"
-                                        ></Text>
-                                        <Text
-                                            fontSize="14"
-                                            fontWeight="400"
-                                            text="Govern what goes in and out of your components"
-                                        ></Text>
+                                            margin={['0', '0', '24', '0']}
+                                            text="Hear us sing"
+                                        />
                                     </Element>
+                                    <Custom2
+                                        background={{
+                                            r: 108,
+                                            g: 126,
+                                            b: 131,
+                                            a: 1,
+                                        }}
+                                        height="400px"
+                                        width="100%"
+                                        margin={['0', '0', '24', '0']}
+                                        shadow={40}
+                                        flexDirection="row"
+                                        alignItems="center"
+                                    />
                                     <Element
                                         canvas
                                         background={{
@@ -346,21 +316,6 @@ function App() {
                                             width="55%"
                                             custom={{displayName: 'Right'}}
                                         >
-                                            <Custom2
-                                                background={{
-                                                    r: 108,
-                                                    g: 126,
-                                                    b: 131,
-                                                    a: 1,
-                                                }}
-                                                height="125px"
-                                                width="100%"
-                                                padding={['0', '0', '0', '20']}
-                                                margin={['0', '0', '0', '0']}
-                                                shadow={40}
-                                                flexDirection="row"
-                                                alignItems="center"
-                                            />
                                             <Custom3
                                                 background={{
                                                     r: 134,
