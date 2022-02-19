@@ -146,7 +146,7 @@ function App() {
                                             padding={['0', '0', '0', '0']}
                                             flexDirection="row"
                                             width="350px"
-                                            height="250px"
+                                            height="252px"
                                             custom={{displayName: 'Image'}}
                                         >
                                             <Image src="/eb.jpeg" alt="image of ceo" width="200" height="252" />
