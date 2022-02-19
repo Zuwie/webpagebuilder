@@ -1,5 +1,21 @@
-# Landing
+## Getting Started
 
-This is the source code for the landing page demo seen [here](https://craft.js.org/)
+First, run the development server:
 
-> The code is admittedly a bit messy and is scheduled for a clean up. In the mean time, feel free to submit an issue if you encounter any confusing/weird/wtf bits ... or even better, submit a pull request! :clap:
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+Open [http://localhost:3001](http://localhost:3001) with your browser to see the result.
+
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+
+## Learn More
+
+If you haven't worked with this builder before I highly recommend getting an overview on [craft.js](https://craft.js.org/docs/overview)
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
